@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WVX64R74');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê do Sorriso | Odontologia e Estética de Alto Padrão em Osasco</title>
+    
+    <!-- Google Fonts: Inter & Playfair Display for a premium look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?v=2"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#064E3B', // Deep elegant green
+                            lightgreen: '#0F766E',
+                            gold: '#D4AF37', // Champagne/Gold accent
+                            dark: '#111827',
+                            light: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for animations and smooth behaviors */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .btn-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8972E 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8972E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        /* Cards da galeria de resultados */
+        #faces-carousel > div,
+        #mouths-carousel > div {
+            min-width: 260px !important;
+            max-width: 260px !important;
+            width: 260px !important;
+            aspect-ratio: 3 / 4 !important;
+            flex-shrink: 0;
+        }
+        @media (min-width: 1024px) {
+            #faces-carousel > div,
+            #mouths-carousel > div {
+                min-width: 280px !important;
+                max-width: 280px !important;
+                width: 280px !important;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-brand-light antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVX64R74"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="fixed w-full z-50 glass-nav border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <svg class="w-8 h-8 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    <span class="font-serif text-2xl font-bold text-brand-green tracking-tight">Ateliê do Sorriso</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#tratamentos" class="text-gray-600 hover:text-brand-gold font-medium transition-colors">Tratamentos</a>
+                    <a href="#carga-imediata" class="text-gray-600 hover:text-brand-gold font-medium transition-colors">Carga Imediata</a>
+                    <a href="#equipe" class="text-gray-600 hover:text-brand-gold font-medium transition-colors">Nossa Equipe</a>
+                    <a href="#depoimentos" class="text-gray-600 hover:text-brand-gold font-medium transition-colors">Depoimentos</a>
+                    <a href="https://wa.me/5511947198460" target="_blank" class="btn-gold text-white px-6 py-2.5 rounded-full font-semibold shadow-lg">
+                        Falar com a Equipe
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-brand-green hover:text-brand-gold focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative bg-brand-dark overflow-hidden flex flex-col lg:flex-row items-center min-h-[90vh] lg:min-h-screen py-20 lg:py-0">
+        
+        <!-- Fundo Inteiro com Gradiente Verde de Alto Padrão e Texturas -->
+        <div class="absolute inset-0 bg-gradient-to-br from-brand-dark via-[#0d1614] to-brand-green/40 z-0"></div>
+        <!-- Padrão de linhas diagonais douradas muito sutis -->
+        <div class="absolute inset-0 opacity-[0.03] z-0 pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #D4AF37 0, #D4AF37 1px, transparent 1px, transparent 30px);"></div>
+        <!-- Brilho radial suave no canto esquerdo -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-brand-gold/10 via-transparent to-transparent z-0 pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-8 pt-10 lg:pt-20">
+            <!-- Text Content (Left Side) -->
+            <div class="w-full lg:w-[55%] text-center lg:text-left flex flex-col justify-center">
+                <span class="uppercase tracking-widest text-brand-gold font-bold text-sm mb-4 block">Atendimento Exclusivamente Particular</span>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white">
+                    Odontologia Estética <br class="hidden sm:block" /> <span class="text-gradient">Alto Padrão</span> em Osasco.
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Transforme sua confiança com tecnologia. A excelência e o conforto que o seu sorriso merece.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="https://wa.me/5511947198460" target="_blank" class="btn-gold text-white px-8 py-4 rounded-full font-bold text-lg text-center shadow-2xl inline-flex items-center justify-center gap-2 hover:scale-105 transition-transform">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                        Falar com a Equipe
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image Content (Right Side - Floating Square Card) -->
+            <div class="w-full lg:w-[45%] flex justify-center items-center">
+                <!-- Moldura Quadrada Premium -->
+                <div class="w-full max-w-[400px] lg:max-w-[450px] aspect-square rounded-3xl overflow-hidden shadow-[0_25px_60px_rgba(0,0,0,0.6)] border-4 border-brand-gold/20 relative group">
+                    <!-- Detalhe sutil de borda interna dourada -->
+                    <div class="absolute inset-0 border border-brand-gold/30 rounded-2xl pointer-events-none z-10 m-1"></div>
+                    <!-- A imagem em enquadramento perfeito (0% 60% foca na cadeira perfeitamente como você escolheu) -->
+                    <img src="arquivos/Hero.png" alt="Ateliê do Sorriso" class="w-full h-full object-cover object-[0%_60%] group-hover:scale-105 transition-transform duration-700" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tratamentos" class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2 block">Nossas Soluções</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-green mb-4">Nossas Especialidades</h2>
+                <p class="text-gray-600 text-lg">Tratamentos multidisciplinares de alta performance para elevar a estética e a saúde do seu rosto.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group flex flex-col">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="arquivos/Protese.png" alt="Implantes & Protocolos" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <span class="absolute bottom-4 left-4 bg-brand-green text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Carga Imediata</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-green transition-colors">Implantes & Protocolos</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Soluções definitivas (Unitários, All-on-4 e All-on-6) com materiais premium para devolver a firmeza e segurança da sua mastigação.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group flex flex-col">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="arquivos/Lentes.jpg" alt="Lentes de Porcelana" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <span class="absolute bottom-4 left-4 bg-brand-gold text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Estética Pura</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-green transition-colors">Lentes de Porcelana</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">O sorriso de capa de revista desenhado sob medida. Cor, formato e textura perfeitos para harmonizar com as linhas do seu rosto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group flex flex-col">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="arquivos/Invisalign.jpg" alt="Alinhadores Invisalign" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <span class="absolute bottom-4 left-4 bg-brand-green text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Invisalign Doctor</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-green transition-colors">Alinhadores Invisalign</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Ortodontia de ponta: discreta, rápida e removível. Alinhe seus dentes sem a dor e a estética metálica dos aparelhos tradicionais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group flex flex-col">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="arquivos/Facial.png" alt="Estética e Harmonização" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <span class="absolute bottom-4 left-4 bg-brand-gold text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Harmonização</span>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-brand-green transition-colors">Estética e Harmonização</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Cuidado completo que vai além dos dentes. Unimos a odontologia com estética facial avançada (Botox, preenchimentos) e corporal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2 block">Nosso Time de Especialistas</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-green mb-4">Quem Cuidará do Seu Sorriso</h2>
+                <p class="text-gray-600 text-lg">Pessoas compram de pessoas. Conheça a equipe altamente qualificada que transforma vidas todos os dias no Ateliê do Sorriso.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Team 1: Dra Bruna -->
+                <div class="text-center group">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-lightgreen group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
+                        <!-- scale-[1.50] (zoom de 50%) e origin-[50%_50%] (puxa a cabeça dela ainda mais para cima, centrando o zoom) -->
+                        <img src="arquivos/BrunaB2.png" alt="Dra. Bruna Keller" class="w-full h-full object-cover scale-[1.50] origin-[50%_50%]" />
+                    </div>
+                    <h4 class="font-bold text-lg text-gray-900">Dra. Bruna Keller</h4>
+                    <p class="text-brand-gold text-sm font-semibold mb-2">Diretora Clínica</p>
+                    <p class="text-gray-500 text-xs px-2">CRO-SP 110.378. Especialista com visão em Ortodontia, Odontopediatria, Cirurgia e HOF.</p>
+                </div>
+
+                <!-- Team 2: Dra Talita -->
+                <div class="text-center group">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-100 group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
+                        <img src="arquivos/TalitaB.png" alt="Dra. Talita" class="w-full h-full object-cover" />
+                    </div>
+                    <h4 class="font-bold text-lg text-gray-900">Dra. Talita</h4>
+                    <p class="text-brand-gold text-sm font-semibold mb-2">Avaliação e Planejamento</p>
+                    <p class="text-gray-500 text-xs px-2">Seu primeiro contato. Sempre pronta para ouvir e desenhar o planejamento perfeito em Dentística.</p>
+                </div>
+
+                <!-- Team 3: Stephano -->
+                <div class="text-center group">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-100 group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
+                        <img src="arquivos/StephanoB.png" alt="Stephano" class="w-full h-full object-cover" />
+                    </div>
+                    <h4 class="font-bold text-lg text-gray-900">Stephano</h4>
+                    <p class="text-brand-gold text-sm font-semibold mb-2">Responsável Técnico</p>
+                    <p class="text-gray-500 text-xs px-2">Parceiro do laboratório Studio SR, essencial para viabilizar os protocolos de Carga Imediata em 3D.</p>
+                </div>
+
+                <!-- Team 4: Sthefany -->
+                <div class="text-center group">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-100 group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
+                        <img src="arquivos/SthefanyB.png" alt="Sthefany" class="w-full h-full object-cover" />
+                    </div>
+                    <h4 class="font-bold text-lg text-gray-900">Sthefany</h4>
+                    <p class="text-brand-gold text-sm font-semibold mb-2">Recepção e Estética</p>
+                    <p class="text-gray-500 text-xs px-2">Veterana da casa. O rosto acolhedor que garante uma experiência incrível desde a porta de entrada.</p>
+                </div>
+
+                <!-- Team 5: Dr. Matheus -->
+                <div class="text-center group">
+                    <div class="relative w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden border-4 border-gray-100 group-hover:border-brand-gold transition-colors duration-300 shadow-lg">
+                        <img src="arquivos/MatheusB.png" alt="Dr. Matheus" class="w-full h-full object-cover" />
+                    </div>
+                    <h4 class="font-bold text-lg text-gray-900">Dr. Matheus</h4>
+                    <p class="text-brand-gold text-sm font-semibold mb-2">Avaliação e Planejamento</p>
+                    <p class="text-gray-500 text-xs px-2">Profissional dedicado que acompanha os pacientes com atenção e cuidado em cada etapa do tratamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-green bg-opacity-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-[#043325] via-brand-green to-[#03261d] rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 p-12 lg:p-16 text-white flex flex-col justify-center">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold mb-6">A Experiência Ateliê</h2>
+                    <p class="text-brand-lightgreen mb-8 text-lg">Por que pacientes de toda a região escolhem o nosso alto padrão para realizar seus sonhos?</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Atendimento 100% Particular</h4>
+                                <p class="text-gray-300 text-sm">Tempo de cadeira dedicado exclusivamente a você. Sem pressa, sem sala de espera lotada, foco total na sua excelência e saúde.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Tecnologia Digital 3D</h4>
+                                <p class="text-gray-300 text-sm">Planejamento computadorizado para total previsibilidade. Você consegue visualizar o resultado do seu sorriso antes mesmo da cirurgia.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-1">Conforto e Localização</h4>
+                                <p class="text-gray-300 text-sm">Estrutura premium e acolhedora no coração de Osasco (Praça Padroeira do Brasil), com estacionamento próprio para sua segurança.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 min-h-[400px] lg:h-auto relative overflow-hidden group">
+                    <!-- Carousel Container -->
+                    <div id="atelier-carousel" class="relative w-full h-full min-h-[400px]">
+                        <!-- Carousel Slides -->
+                        <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
+                            <img src="arquivos/1.jpeg" alt="Ateliê do Sorriso 1" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+                            <img src="arquivos/2.jpeg" alt="Ateliê do Sorriso 2" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+                            <img src="arquivos/3.jpeg" alt="Ateliê do Sorriso 3" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+                            <img src="arquivos/4.jpeg" alt="Ateliê do Sorriso 4" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+                            <img src="arquivos/5.jpeg" alt="Ateliê do Sorriso 5" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+                            <img src="arquivos/6.jpeg" alt="Ateliê do Sorriso 6" class="w-full h-full object-cover" />
+                        </div>
+
+                        <!-- Dark Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+
+                        <!-- Navigation Arrows -->
+                        <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none z-10">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none z-10">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+
+                        <!-- Dot Indicators -->
+                        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                            <span onclick="setSlide(0)" class="carousel-dot w-2 h-2 rounded-full bg-white opacity-100 cursor-pointer transition-all duration-300"></span>
+                            <span onclick="setSlide(1)" class="carousel-dot w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300"></span>
+                            <span onclick="setSlide(2)" class="carousel-dot w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300"></span>
+                            <span onclick="setSlide(3)" class="carousel-dot w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300"></span>
+                            <span onclick="setSlide(4)" class="carousel-dot w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300"></span>
+                            <span onclick="setSlide(5)" class="carousel-dot w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carga-imediata" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2">
+                    <img src="arquivos/Gemini_gen.png" alt="Tecnologia Odontológica 3D" class="rounded-2xl shadow-2xl w-full object-cover h-[500px]" />
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-lightgreen bg-opacity-10 text-brand-lightgreen font-semibold text-sm mb-6">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        Inovação & Rapidez
+                    </div>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-green mb-6">Dentes fixos em dias, não em meses.</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        No Ateliê do Sorriso, somos especialistas na técnica de <strong>Carga Imediata para Prótese</strong>.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Graças à nossa parceria direta com o laboratório de alta tecnologia <em>Studio SR</em>, utilizamos escaneamento 3D e fresadoras de última geração para esculpir seu novo sorriso. Você entra para a cirurgia e, em tempo recorde, sai mastigando com segurança e firmeza absoluta.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-gray-800 font-medium">
+                            <svg class="w-6 h-6 text-brand-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Arcada completa fixa sobre implantes
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-800 font-medium">
+                            <svg class="w-6 h-6 text-brand-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Céu da boca 100% livre
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-800 font-medium">
+                            <svg class="w-6 h-6 text-brand-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Planejamento digital previsível e seguro
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia" class="py-20 bg-brand-dark text-white overflow-hidden relative">
+        <!-- Texturas de luxo do fundo -->
+        <div class="absolute inset-0 bg-gradient-to-br from-brand-dark via-[#0d1614] to-brand-green/30 z-0"></div>
+        <div class="absolute inset-0 opacity-[0.02] z-0 pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #D4AF37 0, #D4AF37 1px, transparent 1px, transparent 30px);"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            <!-- Left Side: Content -->
+            <div class="w-full lg:w-[40%] flex flex-col justify-center">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mb-6">Ferramentas Modernas e <br/><span class="text-gradient">Precisão Tridimensional</span></h2>
+                <p class="text-gray-300 mb-8 leading-relaxed">
+                    Utilizamos as ferramentas mais modernas para planejar seu tratamento com precisão tridimensional milimétrica. Diagnósticos rápidos, seguros e totalmente previsíveis.
+                </p>
+                
+                <!-- Tech Specs checklist -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center text-brand-gold">✓</div>
+                        <div>
+                            <h4 class="font-bold text-white text-base">Escaneamento Intraoral 3D</h4>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center text-brand-gold">✓</div>
+                        <div>
+                            <h4 class="font-bold text-white text-base">Implantodontia Computadorizada</h4>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center text-brand-gold">✓</div>
+                        <div>
+                            <h4 class="font-bold text-white text-base">Tecnologia Alemã CAD/CAM</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Tech Carousel -->
+            <div class="w-full lg:w-[60%] flex flex-col items-center">
+                <div class="w-full max-w-[650px] aspect-[4/3] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.6)] border-4 border-brand-gold/20 relative group bg-[#0d1614]">
+                    <!-- Borda interna dourada -->
+                    <div class="absolute inset-0 border border-brand-gold/30 rounded-2xl pointer-events-none z-10 m-1"></div>
+                    
+                    <!-- Tech Carousel Slides -->
+                    <div id="tech-carousel-container" class="relative w-full h-full">
+                        <div class="tech-slide absolute inset-0 opacity-100 transition-opacity duration-700 ease-in-out">
+                            <img src="arquivos/Tec/Captura de tela 2026-06-22 122607.png" alt="Planejamento de Implantes 3D" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="tech-slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+                            <img src="arquivos/Tec/Captura de tela 2026-06-22 122822.png" alt="Prótese Digital CAD/CAM" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="tech-slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+                            <img src="arquivos/Tec/Captura de tela 2026-06-22 122845.png" alt="Escaneamento Intraoral" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="tech-slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+                            <img src="arquivos/Tec/Captura de tela 2026-06-22 122901.png" alt="Simulação de Oclusão" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="tech-slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+                            <img src="arquivos/Tec/Gemini_Generated_Image_4nkjcn4nkjcn4nkj.png" alt="Impressora 3D" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="tech-slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+                            <img src="arquivos/Tec/Gemini_Generated_Image_nw8a0gnw8a0gnw8a.png" alt="Equipamentos Premium" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="tech-slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+                            <img src="arquivos/Tec/Gemini_Generated_Image_q5fnapq5fnapq5fn.png" alt="Fresadora Odontológica Digital" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button onclick="prevTechSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none z-20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button onclick="nextTechSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white w-10 h-10 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity focus:outline-none z-20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+
+                    <!-- Dot Indicators -->
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+                        <span onclick="setTechSlide(0)" class="tech-dot w-2 h-2 rounded-full bg-white opacity-100 cursor-pointer transition-all duration-300"></span>
+                        <span onclick="setTechSlide(1)" class="tech-dot w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300"></span>
+                        <span onclick="setTechSlide(2)" class="tech-dot w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300"></span>
+                        <span onclick="setTechSlide(3)" class="tech-dot w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300"></span>
+                        <span onclick="setTechSlide(4)" class="tech-dot w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300"></span>
+                        <span onclick="setTechSlide(5)" class="tech-dot w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300"></span>
+                        <span onclick="setTechSlide(6)" class="tech-dot w-2 h-2 rounded-full bg-white/50 cursor-pointer transition-all duration-300"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <span class="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2 block">Prova Social</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-green mb-4">Histórias Reais, <br/>Sorrisos Transformados</h2>
+                    <p class="text-gray-600 text-lg">O que nossos pacientes dizem sobre a experiência exclusiva no Ateliê do Sorriso.</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="flex text-brand-gold">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    </div>
+                    <span class="text-sm font-bold text-gray-700">Avaliações 5 Estrelas</span>
+                </div>
+            </div>
+
+            <!-- Galeria de Casos Reais (Cases) -->
+            <div class="mb-12">
+                <div class="text-center max-w-3xl mx-auto mb-8">
+                    <span class="text-brand-gold font-bold uppercase tracking-wider text-sm mb-2 block">Sorrisos Reais</span>
+                    <h3 class="font-serif text-3xl md:text-4xl font-bold text-brand-green mb-4">Galeria de Resultados</h3>
+                    <p class="text-gray-600 text-lg">Veja o impacto na expressão de nossos pacientes e a precisão técnica em detalhes macro.</p>
+                </div>
+
+                <!-- Sub-sessão 1: Impacto Estético e Expressão (Rostos) -->
+                <div class="mb-10">
+                    <h4 class="font-serif text-xl md:text-2xl font-bold text-brand-green mb-4 text-center border-b pb-3 border-brand-gold/20 max-w-xl mx-auto">Impacto Estético & Expressão Facial</h4>
+                    <div class="relative group/faces-carousel">
+                        <!-- Navigation Arrows -->
+                        <button onclick="scrollCarousel('faces-carousel', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-12 h-12 rounded-full flex items-center justify-center z-10 opacity-0 group-hover/faces-carousel:opacity-100 transition-opacity duration-300 focus:outline-none shadow-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="scrollCarousel('faces-carousel', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-12 h-12 rounded-full flex items-center justify-center z-10 opacity-0 group-hover/faces-carousel:opacity-100 transition-opacity duration-300 focus:outline-none shadow-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+
+                        <!-- Carousel Container -->
+                        <div id="faces-carousel" class="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar pb-4">
+                            <!-- Slide 1 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/2025-02-14_00-07-42_UTC.jpg" alt="Transformação de Sorriso 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/2025-02-24_14-29-55_UTC.jpg" alt="Transformação de Sorriso 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/2025-03-27_14-19-26_UTC.jpg" alt="Transformação de Sorriso 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/2025-08-19_21-10-05_UTC.jpg" alt="Transformação de Sorriso 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 5 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/2025-10-10_16-28-02_UTC_1.jpg" alt="Transformação de Sorriso 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 6 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/2025-10-23_17-11-18_UTC_1.jpg" alt="Transformação de Sorriso 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 7 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/2025-11-04_18-44-58_UTC_1.jpg" alt="Transformação de Sorriso 7" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 8 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/4 lentes de contato em porcelana ✨..Conforme as resoluções 196-2019, 198-2019 e Lei Federal 5081.jpg" alt="Transformação de Sorriso 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 9 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/COMEÇAMOS A SEMANA COM 8 FACETAS EM RESINA✨Conforme as resoluções 196-2019, 198-2019 e Lei Feder.jpg" alt="Transformação de Sorriso 9" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 10 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/Caso finalizado de 10 facetas em Resina na cor BL2 Conforme as resoluções 196-2019, 198-2019 e L.jpg" alt="Transformação de Sorriso 10" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 11 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/Em cada antes e depois, uma história de coragem, superação e conquista.Sorrisos que nascem em um.jpg" alt="Transformação de Sorriso 11" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 12 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/✨ Ontem foi um dia de muita emoção por aqui!Nossa paciente Francisca chegou cheia de receios com.jpg" alt="Transformação de Sorriso 12" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 13 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer">
+                                <img src="arquivos/Cases/Pessoas/✨Esse é o Ronaldo, 40 anos, um exemplo de força e superação. Após um grave acidente de trânsito .jpg" alt="Transformação de Sorriso 13" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub-sessão 2: Casos Clínicos - Detalhe Técnico (Bocas) -->
+                <div>
+                    <h4 class="font-serif text-xl md:text-2xl font-bold text-brand-green mb-4 text-center border-b pb-3 border-brand-gold/20 max-w-xl mx-auto">Casos Clínicos - Detalhe de Alta Precisão</h4>
+                    <div class="relative group/mouths-carousel">
+                        <!-- Navigation Arrows -->
+                        <button onclick="scrollCarousel('mouths-carousel', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-12 h-12 rounded-full flex items-center justify-center z-10 opacity-0 group-hover/mouths-carousel:opacity-100 transition-opacity duration-300 focus:outline-none shadow-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button onclick="scrollCarousel('mouths-carousel', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-12 h-12 rounded-full flex items-center justify-center z-10 opacity-0 group-hover/mouths-carousel:opacity-100 transition-opacity duration-300 focus:outline-none shadow-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+
+                        <!-- Carousel Container -->
+                        <div id="mouths-carousel" class="flex gap-8 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar pb-4">
+                            <!-- Slide 1 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer bg-gray-50">
+                                <img src="arquivos/Cases/Dentes/Caso de reabilitação com laminados em porcelana! .Conforme as resoluções 196-2019, 198-2019 e Le.jpg" alt="Laminados em Porcelana" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer bg-gray-50">
+                                <img src="arquivos/Cases/Dentes/Caso de reabilitação com facetas e coroas em zircônia! .Conforme as resoluções 196-2019, 198-201.jpg" alt="Facetas e Coroas em Zircônia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer bg-gray-50">
+                                <img src="arquivos/Cases/Dentes/20 facetas em resina! Conforme as resoluções 196-2019, 198-2019 e Lei Federal 5081-66- estas ima.jpg" alt="Facetas em Resina" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer bg-gray-50">
+                                <img src="arquivos/Cases/Dentes/CASO ORTODÔNTICO FINALIZADO COM SUCESSO!! ☺️..Conforme as resoluções 196-2019, 198-2019 e Lei Fe.jpg" alt="Caso Ortodôntico Finalizado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 5 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer bg-gray-50">
+                                <img src="arquivos/Cases/Dentes/Caso de reabilitação com coroas sobre implantes, facetas e coroas em cerâmica 🩶..Conforme as re.jpg" alt="Coroas e Implantes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 6 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer bg-gray-50">
+                                <img src="arquivos/Cases/Dentes/Nós acreditamos que podemos transformar vidas! 🫶🏼.Conforme as resoluções 196-2019, 198-2019 e .jpg" alt="Transformação de Vidas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                            <!-- Slide 7 -->
+                            <div class="min-w-[40%] sm:min-w-[28%] lg:min-w-[25%] snap-start aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex-shrink-0 group cursor-pointer bg-gray-50">
+                                <img src="arquivos/Cases/Dentes/finalização de caso ortodôntico, já iniciamos o protocolo de clareamento! 🤍📍Agende sua avaliaç.jpg" alt="Caso Ortodôntico e Clareamento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Disclaimer CFO Obrigatório -->
+                <div class="mt-8 text-center text-xs text-gray-500 max-w-4xl mx-auto italic">
+                    * Divulgação de imagens autorizada em conformidade com as Resoluções CFO 196/2019, 198/2019 e Lei Federal 5081/66. Resultados de caráter individual, necessitando de consulta diagnóstica prévia.
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative flex flex-col justify-between">
+                    <div>
+                        <svg class="absolute top-6 right-6 w-10 h-10 text-brand-green opacity-10" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <div class="flex text-brand-gold mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic leading-relaxed relative z-10">
+                            "Pensem em uma equipe maravilhosa, humana, cuidadosa e extremamente competente... pois encontrei no Ateliê do Sorriso! Eu morria de medo de dentista, mas perdi esse medo quando conheci essa equipe!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-brand-green bg-opacity-10 text-brand-green font-bold text-lg flex items-center justify-center border border-brand-green/20">
+                            M
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brand-dark">Maria Aparecida</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative flex flex-col justify-between">
+                    <div>
+                        <svg class="absolute top-6 right-6 w-10 h-10 text-brand-green opacity-10" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <div class="flex text-brand-gold mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic leading-relaxed relative z-10">
+                            "Melhor clínica odontológica que já conheci. Funcionários gentis, educados demais. Atendimento de primeira do início ao fim!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-brand-gold bg-opacity-10 text-brand-gold font-bold text-lg flex items-center justify-center border border-brand-gold/20">
+                            L
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brand-dark">Lívia Pereira</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative flex flex-col justify-between">
+                    <div>
+                        <svg class="absolute top-6 right-6 w-10 h-10 text-brand-green opacity-10" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <div class="flex text-brand-gold mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic leading-relaxed relative z-10">
+                            "Grupo de especialistas impecáveis! Vale muito a pena conferir. No meu caso valeu muito porque eu não gostava de dentista, só tive decepções no passado, até conhecer o Ateliê do Sorriso, onde eu fiquei tranquila para cuidar dos dentes."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-brand-green bg-opacity-10 text-brand-green font-bold text-lg flex items-center justify-center border border-brand-green/20">
+                            J
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brand-dark">Juliana Martins</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative flex flex-col justify-between">
+                    <div>
+                        <svg class="absolute top-6 right-6 w-10 h-10 text-brand-green opacity-10" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <div class="flex text-brand-gold mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic leading-relaxed relative z-10">
+                            "Atendimento ótimo, recepcionistas super simpáticas, atendimento rápido! E as doutoras são ótimas especialistas, super gentis, não fazem nada com pressa para ficar tudo com ótima qualidade. Indico super!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-brand-gold bg-opacity-10 text-brand-gold font-bold text-lg flex items-center justify-center border border-brand-gold/20">
+                            M
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brand-dark">Mirella Monteiro</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 5 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative flex flex-col justify-between">
+                    <div>
+                        <svg class="absolute top-6 right-6 w-10 h-10 text-brand-green opacity-10" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <div class="flex text-brand-gold mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic leading-relaxed relative z-10">
+                            "Uma das melhores clínicas que já conheci neste segmento. Os profissionais são excelentes, o atendimento é excelente e a estrutura é impecável. Transmite muita confiança e cuidado."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-brand-green bg-opacity-10 text-brand-green font-bold text-lg flex items-center justify-center border border-brand-green/20">
+                            I
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brand-dark">Ingrid Souza</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 6 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative flex flex-col justify-between">
+                    <div>
+                        <svg class="absolute top-6 right-6 w-10 h-10 text-brand-green opacity-10" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                        <div class="flex text-brand-gold mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-gray-600 mb-6 italic leading-relaxed relative z-10">
+                            "Minha experiência foi excelente. A Dra. Bruna e toda a equipe demonstram paixão pela profissão e isso me deixou completamente segura. Profissionais extremamente detalhistas. Estou super satisfeita e agora posso sorrir sem timidez!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full bg-brand-gold bg-opacity-10 text-brand-gold font-bold text-lg flex items-center justify-center border border-brand-gold/20">
+                            A
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-brand-dark">Andressa Teixeira</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://wa.me/5511947198460" target="_blank" class="btn-gold text-white px-8 py-4 rounded-full font-bold text-lg inline-flex items-center gap-2 shadow-lg">
+                    Quero ser o próximo a sorrir
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <svg class="w-8 h-8 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                        <span class="font-serif text-2xl font-bold text-white tracking-tight">Ateliê do Sorriso</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6">
+                        Especialistas em Implantes, Protocolos, Lentes de Porcelana e Invisalign. A tecnologia avançada a favor da sua autoestima.
+                    </p>
+                    <a href="https://wa.me/5511947198460" target="_blank" class="btn-gold text-white px-6 py-3 rounded-full font-bold inline-block">
+                        Falar com a Recepção
+                    </a>
+                </div>
+
+                <!-- Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand-gold">Nossa Clínica</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#tratamentos" class="hover:text-white transition-colors">Especialidades</a></li>
+                        <li><a href="#carga-imediata" class="hover:text-white transition-colors">Carga Imediata</a></li>
+                        <li><a href="#equipe" class="hover:text-white transition-colors">Corpo Clínico</a></li>
+                        <li><a href="https://instagram.com/ateliedosorrisoosasco" target="_blank" class="hover:text-white transition-colors">Nosso Instagram</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand-gold">Contato</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span>Praça Padroeira do Brasil, 145<br>Centro - Osasco/SP</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <span>(11) 3682-0703</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-brand-gold flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                            <span>(11) 97086-7663</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Legal/Hours -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6 text-brand-gold">Funcionamento</h4>
+                    <ul class="space-y-2 text-gray-400 mb-6">
+                        <li>Segunda a Sexta: 8:30h às 18:30h</li>
+                        <li>Sábados: 8:00h às 14:00h</li>
+                    </ul>
+                    <div class="text-xs text-gray-500 space-y-1">
+                        <p>Dra. Bruna Keller | CRO-SP: 110.378</p>
+                        <p>CNPJ: 07.358.731/0001-52</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Ateliê do Sorriso. Todos os direitos reservados. Feito para excelência.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll adjustment for fixed navbar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80, // adjust for navbar height
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Carousel Script para Experiência Ateliê
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+
+        function showSlide(index) {
+            if(!slides.length) return;
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.remove('opacity-0');
+                    slide.classList.add('opacity-100');
+                    slide.style.zIndex = '1';
+                } else {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0');
+                    slide.style.zIndex = '0';
+                }
+            });
+
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.remove('bg-white/50');
+                    dot.classList.add('bg-white');
+                    dot.style.transform = 'scale(1.2)';
+                } else {
+                    dot.classList.remove('bg-white');
+                    dot.classList.add('bg-white/50');
+                    dot.style.transform = 'scale(1)';
+                }
+            });
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let next = (currentSlide + 1) % slides.length;
+            showSlide(next);
+        }
+
+        function prevSlide() {
+            let prev = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(prev);
+        }
+
+        function setSlide(index) {
+            showSlide(index);
+        }
+
+        // Inicializar Carousel se houver slides
+        if (slides.length) {
+            showSlide(0);
+            let autoPlay = setInterval(nextSlide, 5000);
+            const carouselContainer = document.getElementById('atelier-carousel');
+            if (carouselContainer) {
+                carouselContainer.addEventListener('mouseenter', () => clearInterval(autoPlay));
+                carouselContainer.addEventListener('mouseleave', () => {
+                    autoPlay = setInterval(nextSlide, 5000);
+                });
+            }
+        }
+
+        // Carousel Script para Tecnologia (Provas Visuais)
+        let currentTechSlide = 0;
+        const techSlides = document.querySelectorAll('.tech-slide');
+        const techDots = document.querySelectorAll('.tech-dot');
+
+        function showTechSlide(index) {
+            if(!techSlides.length) return;
+            techSlides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.remove('opacity-0');
+                    slide.classList.add('opacity-100');
+                    slide.style.zIndex = '1';
+                } else {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0');
+                    slide.style.zIndex = '0';
+                }
+            });
+
+            techDots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.remove('bg-white/50');
+                    dot.classList.add('bg-white');
+                    dot.style.transform = 'scale(1.2)';
+                } else {
+                    dot.classList.remove('bg-white');
+                    dot.classList.add('bg-white/50');
+                    dot.style.transform = 'scale(1)';
+                }
+            });
+            currentTechSlide = index;
+        }
+
+        function nextTechSlide() {
+            let next = (currentTechSlide + 1) % techSlides.length;
+            showTechSlide(next);
+        }
+
+        function prevTechSlide() {
+            let prev = (currentTechSlide - 1 + techSlides.length) % techSlides.length;
+            showTechSlide(prev);
+        }
+
+        function setTechSlide(index) {
+            showTechSlide(index);
+        }
+
+        // Inicializar Carousel de Tecnologia se houver slides
+        if (techSlides.length) {
+            showTechSlide(0);
+            let techAutoPlay = setInterval(nextTechSlide, 6000);
+            const techCarouselContainer = document.getElementById('tech-carousel-container');
+            if (techCarouselContainer) {
+                techCarouselContainer.addEventListener('mouseenter', () => clearInterval(techAutoPlay));
+                techCarouselContainer.addEventListener('mouseleave', () => {
+                    techAutoPlay = setInterval(nextTechSlide, 6000);
+                });
+            }
+        }
+
+        // === Carrosséis de Resultados - Cíclico Simples ===
+        function getStep(el) {
+            const first = el.children[0];
+            if (!first) return 0;
+            const gap = parseFloat(getComputedStyle(el).gap) || 16;
+            return first.offsetWidth + gap;
+        }
+
+        function scrollCarousel(id, direction) {
+            const el = document.getElementById(id);
+            if (!el) return;
+
+            const step = getStep(el);
+            if (step <= 0) return;
+
+            const count = el.children.length;
+            const currentIndex = Math.round(el.scrollLeft / step);
+            const nextIndex = (currentIndex + direction + count) % count;
+
+            el.scrollTo({ left: nextIndex * step, behavior: 'smooth' });
+        }
+
+        // Inicializar carrosséis
+        ['faces-carousel', 'mouths-carousel'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.scrollLeft = 0;
+        });
+    </script>
+</body>
+</html>
