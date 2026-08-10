@@ -73,7 +73,8 @@
       equipe: "view_team",
       experiencia: "view_experience",
       processo: "view_steps",
-      depoimentos: "view_testimonials"
+      depoimentos: "view_testimonials",
+      localizacao: "view_location"
     };
     var seen = {};
     var observer = new IntersectionObserver(function (entries) {
