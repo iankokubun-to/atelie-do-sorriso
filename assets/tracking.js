@@ -64,7 +64,17 @@
   }, { passive: true });
 
   if ("IntersectionObserver" in window) {
-    var sectionEvents = { tratamentos: "view_treatment", opcoes: "view_treatment", processo: "view_steps" };
+    var sectionEvents = {
+      tratamentos: "view_treatment",
+      opcoes: "view_treatment",
+      "carga-imediata": "view_immediate_load",
+      casos: "view_cases",
+      tecnologia: "view_technology",
+      equipe: "view_team",
+      experiencia: "view_experience",
+      processo: "view_steps",
+      depoimentos: "view_testimonials"
+    };
     var seen = {};
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
