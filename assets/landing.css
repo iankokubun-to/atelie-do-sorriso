@@ -99,7 +99,7 @@ section { padding: 88px 0; }
 .testimonial cite { margin-top: auto; color: var(--ink); font-style: normal; font-weight: 850; }
 .case-pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 280px)); justify-content: center; gap: 18px; }
 .case-pair figure { margin: 0; overflow: hidden; border-radius: 18px; background: white; border: 1px solid var(--line); }
-.case-pair img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.case-pair img { width: 100%; height: 350px; aspect-ratio: 4 / 5; object-fit: cover; }
 .case-pair figcaption { padding: 13px 16px; color: var(--muted); font-size: 12px; }
 .location { background: var(--cream); }
 .location-grid { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 50px; }
